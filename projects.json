@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "CMOTD",
+      "description": "CMOTD by TheRockYT",
+      "display": "CMOTD",
+      "platform": [ "BungeeCord" ],
+      "servers": "1-2",
+      "private": false,
+      "beta": false,
+      "downloads": true,
+      "docs": false,
+      "tags": [  ]
+    },
+    {
+      "name": "GroupKicker",
+      "description": "GroupKicker by TheRockYT",
+      "display": "GroupKicker",
+      "platform": [ "BungeeCord", "Spigot" ],
+      "servers": "1-2",
+      "private": true,
+      "beta": true,
+      "downloads": false,
+      "docs": false,
+      "tags": [  ]
+    }
+  ]
+}

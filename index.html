@@ -12,6 +12,10 @@
         }
         .project {
             margin-left: 3%;
+            background: green;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
         }
         .desc {
             margin-left: 4%;
@@ -22,36 +26,121 @@
         .size {
             margin-left: 5%;
         }
+        .invis {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to TheRockYT's github page</h1>
-    <h2>This is a test website</h2>
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>CMOTD</h3>
-        <h4 class="desc">A simple MOTD system for BungeeCord</h4>
-        <h4 class="wiki">> <a href="project.html?name=CMOTD">Documentation / Downloads</a></h4>
-        <h4 class="size">> small - medium bungee servers</h4>
-    </div>
-    <div class="project">
-        <h3>GroupKicker (BETA)</h3>
-        <h4 class="desc">A permissions system for Spiogot/BungeeCord with MySQL support</h4>
-        <h4 class="wiki">> <a href="project.html?name=GroupKicker">Documentation / Downloads</a></h4>
-        <h4 class="size">> small - medium spigot, bungee servers</h4>
-    </div>
-    <div class="project">
-        <h3>DamageReducer</h3>
-        <h4 class="desc">A damage change system for Bukkit/Spigot</h4>
-        <h4 class="wiki">> <a href="project.html?name=DamageReducer">Documentation / Downloads</a></h4>
-        <h4 class="size">> small spigot servers</h4>
-    </div>
-    <div class="project">
-        <h3>FSpawn (UPDATE SOON)</h3>
-        <h4 class="desc">A spawn system for Bukkit/Spigot.</h4>
-        <h4 class="wiki">> <a href="project.html?name=FSpawn">Documentation / Downloads</a></h4>
-        <h4 class="size">> small - medium spigot servers</h4>
+    <div id="main_content">
+        <h1>Welcome to TheRockYT's GitHub page</h1>
+        <h2>This is a test website</h2>
+        <h2>Projects</h2>
+        <div id="projects">
+            <div class="project">
+                <h3>CMOTD</h3>
+                <h4 class="desc">A simple MOTD system for BungeeCord</h4>
+                <h4 class="wiki" id="wiki_CMOTD">> Documentation / Downloads</h4>
+                <h4 class="size">> small - medium bungee servers</h4>
+            </div>
+            <div class="project">
+                <h3>GroupKicker (BETA, PRIVATE)</h3>
+                <h4 class="desc">A permissions system for Spiogot/BungeeCord with MySQL support</h4>
+                <h4 class="wiki" id="wiki_GroupKicker">> Documentation / Downloads</h4>
+                <h4 class="size">> small - medium spigot, bungee servers</h4>
+            </div>
+            <div class="project">
+                <h3>DamageReducer</h3>
+                <h4 class="desc">A damage change system for Bukkit/Spigot</h4>
+                <h4 class="wiki" id="wiki_DamageReducer">> Documentation / Downloads</h4>
+                <h4 class="size">> small spigot servers</h4>
+            </div>
+            <div class="project">
+                <h3>FSpawn (UPDATE SOON)</h3>
+                <h4 class="desc">A spawn system for Bukkit/Spigot.</h4>
+                <h4 class="wiki" id="wiki_FSpawn">> Documentation / Downloads</h4>
+                <h4 class="size">> small - medium spigot servers</h4>
+            </div>
+        </div>
     </div>
 
+    <script>
+        function loadScreenFromTag(){
+            var href = location.href.split("#");
+            if(href.length < 2){
+                location.href = "#";
+            }
+            var tag = href[1];
+            if(tag == ""){
+                loadMainScreen();
+            }else{
+                console.log("HERE");
+            }
+        }
+        function setTagScreen(tag){
+            location.href = "#"+tag;
+            loadScreenFromTag();
+        }
+        function loadMainScreen(){
+            const Http = new XMLHttpRequest();
+            const url='projects.json';
+            Http.open("GET", url);
+            Http.send();
+            Http.onreadystatechange = (e) => {
+                if(Http.responseText == ""){
+                    return;
+                }
+                var projects = document.getElementById("projects");
+                projects.innerHTML = "";
+                var json = JSON.parse(Http.responseText);
+                var projects = json.projects;
+                for(var v = 0; v < projects.length; v++){
+                    var current = projects[v];
+
+                    var div = document.createElement("div");
+                    div.classList.add("project");
+
+                    var title = document.createElement("h3");
+                    var titleText = document.createTextNode(current.name);
+                    title.appendChild(titleText);
+                    div.appendChild(title);
+
+                    var desc = document.createElement("h4");
+                    var descText = document.createTextNode(current.description);
+                    desc.classList.add("desc");
+                    desc.appendChild(descText);
+                    div.appendChild(desc);
+                    if(current.downloads || current.docs){
+                        var text = "";
+                        if(current.downloads && current.docs){
+                            text = "Downloads/Documentation";
+                        }
+                        if(current.downloads && !current.docs){
+                            text = "Downloads";
+                        }
+                        if(!current.downloads && current.docs){
+                            text = "Documentation";
+                        }
+                        var wiki = document.createElement("h4");
+                        var wikiText = document.createTextNode("> "+text);
+                        wiki.classList.add("wiki");
+                        wiki.id = "wiki_"+current.name;
+                        wiki.appendChild(wikiText);
+                        div.appendChild(wikiText);
+                    }
+                    document.getElementById("projects").appendChild(div);
+                }
+                var wikis = document.querySelectorAll(".wiki");
+                for(var v = 0; v < wikis.length; v++){
+                    wikis[v].addEventListener('click', (tar) => {
+                        setTagScreen(tar.target.id.split("_")[1]);
+                    });
+                }
+            }
+        }
+
+        loadScreenFromTag();
+
+    </script>
 </body>
 </html>
