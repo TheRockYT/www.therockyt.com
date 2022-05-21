@@ -119,8 +119,26 @@
                     var div = document.createElement("div");
                     div.classList.add("project");
 
+                    var tags = current.tags;
+                    if(current.private){
+                        tags[tags.length] = "Private";
+                    }
+                    if(current.beta){
+                        tags[tags.length] = "Beta";
+                    }
+                    var tag_string = "";
+                    if(tags.length > 0){
+                        tag_string = " (";
+                        for(var i = 0; i < tags.length; i++){
+                            tag_string = tag_string + tags[i];
+                            if(i < tags.length-1){
+                                tag_string = tag_string + ", ";
+                            }
+                        }
+                        tag_string = tag_string + ")";
+                    }
                     var title = document.createElement("h3");
-                    var titleText = document.createTextNode(current.name);
+                    var titleText = document.createTextNode(current.name+tag_string);
                     title.appendChild(titleText);
                     div.appendChild(title);
 
