@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home - TheRockYT</title>
+    <!-- <link rel="icon" type="image/x-icon" href="therockyt.png"> -->
     <style>
         #main_content h1 {
             text-align: center;
@@ -100,6 +101,7 @@
             loadScreenFromTag();
         }
         function loadMainScreen(){
+            changeFavicon("therockyt.png");
             const Http = new XMLHttpRequest();
             const url='projects.json';
             Http.open("GET", url);
@@ -199,6 +201,18 @@
             }else{
                 document.getElementById(el).classList.remove("invis");
             }
+        }
+        function changeFavicon(src) {
+            var head = document.head || document.getElementsByTagName('head')[0];
+            var link = document.createElement('link');
+            var oldLink = document.getElementById('dynamic-favicon');
+            link.id = 'dynamic-favicon';
+            link.rel = 'shortcut icon';
+            link.href = src;
+            if (oldLink) {
+                head.removeChild(oldLink);
+            }
+            head.appendChild(link);
         }
         document.addEventListener('DOMContentLoaded', () => {
             loadScreenFromTag();
