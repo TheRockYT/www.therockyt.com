@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Home - TheRockYT</title>
     <style>
-        h1 {
+        #main_content h1 {
             text-align: center;
         }
-        h2 {
+        #main_content h2 {
             margin-left: 2%;
         }
         .project {
@@ -29,10 +29,19 @@
         .invis {
             display: none;
         }
+        #loading_content, #not_found_content {
+            margin-top: 30vh;
+        }
+        #loading_content *, #not_found_content * {
+            text-align: center;
+        }
+        .backHome {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <div id="main_content">
+    <div id="main_content" class="invis">
         <h1>TheRockYT's GitHub page</h1>
         <h2>This is a test website</h2>
         <h2>Projects</h2>
@@ -63,18 +72,28 @@
             </div>
         </div>
     </div>
-
+    <div id="not_found_content" class="invis">
+        <h1>404</h1>
+        <h2>Page not found</h2>
+        <h3 class="backHome">Home</h3>
+    </div>
+    <div id="loading_content">
+        <h1>Loading...</h1>
+        <h2>Please wait.</h2>
+        <h3>This might take a moment.</h3>
+    </div>
     <script>
         function loadScreenFromTag(){
+            setLoadingScreen();
             var href = location.href.split("#");
             if(href.length < 2){
                 location.href = "#";
             }
-            var tag = href[1];
+            var tag = location.href.split("#")[1];
             if(tag == ""){
                 loadMainScreen();
             }else{
-                console.log("HERE");
+                set404Screen();
             }
         }
         function setTagScreen(tag){
@@ -136,10 +155,43 @@
                         setTagScreen(tar.target.id.split("_")[1]);
                     });
                 }
+                setMainScreen();
             }
         }
-
-        loadScreenFromTag();
+        function setLoadingScreen(){
+            setInvis("main_content", true);
+            setInvis("not_found_content", true);
+            setInvis("loading_content", false);
+        }
+        function set404Screen(){
+            setInvis("main_content", true);
+            setInvis("not_found_content", false);
+            setInvis("loading_content", true);
+        }
+        function setMainScreen(){
+            setInvis("main_content", false);
+            setInvis("not_found_content", true);
+            setInvis("loading_content", true);
+        }
+        function displayMainScreen(){
+            setTagScreen("");
+        }
+        function setInvis(el, bool){
+            if(bool){
+                document.getElementById(el).classList.add("invis");
+            }else{
+                document.getElementById(el).classList.remove("invis");
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            loadScreenFromTag();
+            var homes = document.querySelectorAll(".backHome");
+            for(var v = 0; v < homes.length; v++){
+                homes[v].addEventListener('click', () => {
+                    displayMainScreen();
+                });
+            }
+        });
 
     </script>
 </body>
