@@ -23,6 +23,18 @@
       "downloads": false,
       "docs": false,
       "tags": [  ]
+    },
+    {
+      "name": "CommandServerConnect",
+      "description": "CommandServerConnect by TheRockYT",
+      "display": "CommandServerConnect",
+      "platform": [ "BungeeCord" ],
+      "servers": "1-2",
+      "private": true,
+      "beta": true,
+      "downloads": false,
+      "docs": false,
+      "tags": [  ]
     }
   ]
 }
