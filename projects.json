@@ -2,19 +2,19 @@
   "projects": [
     {
       "name": "CMOTD",
-      "description": "CMOTD by TheRockYT",
+      "description": "Create cool MOTDs with CMOTD. Use maintenance mode when making changes to your server.",
       "display": "CMOTD",
       "platform": [ "BungeeCord" ],
       "servers": "1-2",
       "private": false,
       "beta": false,
-      "downloads": true,
+      "downloads": false,
       "docs": false,
       "tags": [  ]
     },
     {
       "name": "GroupKicker",
-      "description": "GroupKicker by TheRockYT",
+      "description": "A simple permissions system with groups. MySQL support.",
       "display": "GroupKicker",
       "platform": [ "BungeeCord", "Spigot" ],
       "servers": "1-2",
@@ -26,12 +26,12 @@
     },
     {
       "name": "CommandServerConnect",
-      "description": "CommandServerConnect by TheRockYT",
+      "description": "Create simple commands that connect players to different subservers.",
       "display": "CommandServerConnect",
       "platform": [ "BungeeCord" ],
       "servers": "1-2",
-      "private": true,
-      "beta": true,
+      "private": false,
+      "beta": false,
       "downloads": false,
       "docs": false,
       "tags": [  ]
