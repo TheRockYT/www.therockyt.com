@@ -101,7 +101,7 @@
             loadScreenFromTag();
         }
         function loadMainScreen(){
-            changeFavicon("therockyt.png");
+            changeFavicon("img/therockyt.png");
             const Http = new XMLHttpRequest();
             const url='projects.json';
             Http.open("GET", url);
@@ -186,6 +186,7 @@
             setInvis("main_content", true);
             setInvis("not_found_content", false);
             setInvis("loading_content", true);
+            changeFavicon("img/error.png");
         }
         function setMainScreen(){
             setInvis("main_content", false);
