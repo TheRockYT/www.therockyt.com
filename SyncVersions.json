@@ -1,0 +1,10 @@
+{
+  "latest": "0.5 Beta",
+  "latest_development": "0.5 Beta",
+  "versions": [
+    {
+      "version": "0.5 Beta",
+      "release": true
+    }
+  ]
+}
