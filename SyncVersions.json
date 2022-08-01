@@ -1,7 +1,11 @@
 {
   "latest": "0.6.5 Beta",
-  "latest_development": "0.6.6 Beta",
+  "latest_development": "0.6.7 Beta",
   "versions": [
+    {
+      "version": "0.6.7 Beta",
+      "release": false
+    },
     {
       "version": "0.6.6 Beta",
       "release": false
