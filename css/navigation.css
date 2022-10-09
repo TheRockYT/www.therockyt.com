@@ -2,9 +2,9 @@ nav {
     transition: all 1.5s;
     width: 100%;
     position: fixed;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 100;
-    min-height: 70px;
+    height: 70px;
 }
 
 nav ul {
@@ -33,10 +33,6 @@ nav img {
     height: 40px;
     display: none;
     position: fixed;
-}
-
-nav ul {
-    background-color: white;
 }
 
 @media (max-width: 750px) {
