@@ -1,22 +1,70 @@
 nav {
-    position: fixed;
+    transition: all 1.5s;
     width: 100%;
+    position: fixed;
     background-color: white;
+    z-index: 100;
+    min-height: 70px;
+}
+
+nav ul {
+    transition: all 1.5s;
 }
 
 nav ul li {
-    float: left;
+    transition: all 1.5s;
+    width: 100%;
     list-style-type: none;
-    margin: 20px;
     font-size: 30px;
+    text-align: left;
 }
 
-nav ul li a {
-    cursor: pointer;
+nav ul li a,
+nav img {
+    transition: all 1.5s;
     color: black;
     text-decoration: none;
+    cursor: pointer;
+    float: left;
+    margin: 20px;
+}
+
+nav img {
+    height: 40px;
+    display: none;
+    position: fixed;
 }
 
 nav ul {
     background-color: white;
+}
+
+@media (max-width: 750px) {
+    nav {
+        height: 0%;
+    }
+    nav ul:not(.enabled) {
+        opacity: 0.0;
+        transform: translate(100vh);
+    }
+    nav ul.enabled {
+        margin-top: 80px;
+        opacity: 1.0;
+    }
+    nav ul li {
+        text-align: center;
+        margin: 20px;
+    }
+    nav ul li a {
+        float: none;
+        margin: 0;
+    }
+    nav:has(ul.enabled) {
+        height: 100%;
+        text-align: center;
+    }
+    nav img.enabled {
+        margin: 20px;
+        display: block;
+    }
 }
