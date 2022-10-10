@@ -36,7 +36,7 @@ nav img {
     position: fixed;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     nav {
         height: 0%;
     }
