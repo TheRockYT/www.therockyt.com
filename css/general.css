@@ -30,6 +30,7 @@ a {
   color: blue;
 }
 footer {
+  margin-top: 50px;
   min-height: 100px;
   background-color: black;
   color: white;
@@ -37,6 +38,10 @@ footer {
 footer * {
   background-color: black;
   color: white;
+}
+footer ul {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* custom scrollbar */
 ::-webkit-scrollbar {
