@@ -4,15 +4,18 @@
   "version": {
     "1.0.0": {
       "development": true,
-      "release-date": "10/9/2022"
+      "release-date": "10/9/2022",
+      "update": true
     },
     "1.0.1": {
       "development": false,
-      "release-date": "10/10/2022"
+      "release-date": "10/10/2022",
+      "update": false
     },
     "1.0.2": {
       "development": true,
-      "release-date": "10/11/2022"
+      "release-date": "10/11/2022",
+      "update": false
     }
   }
 }
