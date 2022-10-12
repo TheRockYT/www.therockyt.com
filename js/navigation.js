@@ -40,7 +40,7 @@ const nav = `
           <li><a href="/shutuppc" id="nav_shutuppc">ShutUpPC</a></li>
           <li><a href="/platformrace" id="nav_platformrace">Platform Race</a></li>
           <li>
-            <a href="/link/?to=https://github.com/TheRockYT" target="_blank"
+            <a href="/link/?to=https://github.com/TheRockYT"
               >GitHub</a
             >
           </li>
