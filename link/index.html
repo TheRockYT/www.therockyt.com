@@ -1,40 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>External Link - TheRockYT</title>
-    <link rel="shortcut icon" href="/img/therockyt.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/navigation.css" />
-    <link rel="stylesheet" href="/css/site.css" />
-    <script src="/js/navigation.js"></script>
+    <input type="hidden" id="site" value="/link;link;External Link" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <img
-          src="/img/icons/menu_open.png"
-          alt="X"
-          id="nav_open"
-          class="enabled"
-        />
-        <img src="/img/icons/menu_close.png" alt="X" id="nav_close" />
-        <ul id="nav_list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/minecraft.html">Minecraft Plugins</a></li>
-          <li><a href="/shutuppc">ShutUpPC</a></li>
-          <li><a href="/platformrace">Platform Race</a></li>
-          <li>
-            <a href="/link/?to=https://github.com/TheRockYT" target="_blank"
-              >GitHub</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <header id="header"></header>
     <h1>External Link</h1>
     <br />
     <br />
@@ -67,14 +38,8 @@
     <br />
     <br />
 
-    <footer>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/terms">Terms and Conditions</a></li>
-        <li><a href="/privacypolicy">Privacy Policy</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </footer>
+    <footer id="footer"></footer>
+    <script src="/js/navigation.js"></script>
   </body>
   <script>
     var urlParams = new URLSearchParams(window.location.search);

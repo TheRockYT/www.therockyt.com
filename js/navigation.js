@@ -1,39 +1,102 @@
-var nav_open = null
-var nav_close = null
-var nav_list = null
+var nav_open = null;
+var nav_close = null;
+var nav_list = null;
+const head = `
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/therockyt.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/site.css" />`;
+const footer = `
+    <ul>
+      <li>
+        <a href="/" id="footer_home">Home</a>
+      </li>
+      <li>
+        <a href="/terms" id="footer_terms">Terms and Conditions</a>
+      </li>
+      <li>
+        <a href="/privacypolicy" id="footer_privacypolicy">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="/contact" id="footer_contact">Contact</a>
+      </li>
+    </ul>
+`;
+const nav = `
+    <nav>
+        <img
+          src="/img/icons/menu_open.png"
+          alt="X"
+          id="nav_open"
+          class="enabled"
+        />
+        <img src="/img/icons/menu_close.png" alt="X" id="nav_close" />
+        <ul id="nav_list">
+          <li><a href="/" id="nav_home">Home</a></li>
+          <li><a href="/minecraft.html" id="nav_minecraftplugins">Minecraft Plugins</a></li>
+          <li><a href="/shutuppc" id="nav_shutuppc">ShutUpPC</a></li>
+          <li><a href="/platformrace" id="nav_platformrace">Platform Race</a></li>
+          <li>
+            <a href="/link/?to=https://github.com/TheRockYT" target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+`;
+document.getElementById("header").innerHTML = nav;
+document.getElementById("footer").innerHTML = footer;
+document.head.innerHTML += head;
+var sitei = document.getElementById("site");
+var site = ["/404", "unknown", "Unknown"];
 
-document.addEventListener("DOMContentLoaded", function() {
-    nav_open = document.getElementById("nav_open")
-    nav_close = document.getElementById("nav_close")
-    nav_list = document.getElementById("nav_list")
+if (sitei != null) {
+  site = sitei.value.split(";");
+  var footside = document.getElementById("footer_" + site[1]);
+  if (footside != null) {
+    footside.classList.add("active");
+  }
+  var navside = document.getElementById("nav_" + site[1]);
+  if (navside != null) {
+    navside.classList.add("active");
+  }
+}
+setTitle(site[2]);
+nav_open = document.getElementById("nav_open");
+nav_close = document.getElementById("nav_close");
+nav_list = document.getElementById("nav_list");
 
-    nav_open.addEventListener('click', function(event) {
-        setNavState(true)
-    })
-    nav_close.addEventListener('click', function(event) {
-        setNavState(false)
-    })
-
-
+nav_open.addEventListener("click", function (event) {
+  setNavState(true);
 });
-
+nav_close.addEventListener("click", function (event) {
+  setNavState(false);
+});
 function getCurrentNavState() {
-    if (nav_list.classList.contains("enabled")) {
-        nav_open.classList.remove("enabled")
-        nav_close.classList.add("enabled")
-        return true;
-    } else {
-        nav_open.classList.add("enabled")
-        nav_close.classList.remove("enabled")
-        return false;
-    }
+  if (nav_list.classList.contains("enabled")) {
+    nav_open.classList.remove("enabled");
+    nav_close.classList.add("enabled");
+    return true;
+  } else {
+    nav_open.classList.add("enabled");
+    nav_close.classList.remove("enabled");
+    return false;
+  }
+}
+function setTitle(title) {
+  if (title != null) {
+    document.title = title + " - TheRockYT";
+  }
 }
 
 function setNavState(val) {
-    if (val) {
-        nav_list.classList.add("enabled")
-    } else {
-        nav_list.classList.remove("enabled")
-    }
-    return getCurrentNavState()
+  if (val) {
+    nav_list.classList.add("enabled");
+  } else {
+    nav_list.classList.remove("enabled");
+  }
+  return getCurrentNavState();
 }
