@@ -36,9 +36,9 @@ const nav = `
         <img src="/img/icons/menu_close.png" alt="X" id="nav_close" />
         <ul id="nav_list">
           <li><a href="/" id="nav_home">Home</a></li>
-          <li><a href="/spigot" id="nav_spigot">Spigot Plugins</a></li>
+          <li><a href="/directbans" id="nav_directbans">DirectBans</a></li>
+          <li><a href="/sync" id="nav_sync">Sync</a></li>
           <li><a href="/shutuppc" id="nav_shutuppc">ShutUpPC</a></li>
-          <li><a href="/platformrace" id="nav_platformrace">Platform Race</a></li>
           <li>
             <a href="/link/?to=https://github.com/TheRockYT"
               >GitHub</a
