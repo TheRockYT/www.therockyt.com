@@ -102,13 +102,22 @@
     </p>
     <br />
     <h3>5. Static-Service-Setup</h3>
-    <p>5.1 Create the service "service create [agent] static [name]"</p>
-    <p>> 5.1.1 Add -mib [mib] to the end of the command to set the max ram</p>
     <p>
-      > 5.1.2 Add -java [version] to the end of the command to set the java
-      version
+      5.1 Create the service "service create static [agent] [name] [version]
+      {mib}"
     </p>
     <p>5.2 Start the service "service start [name]"</p>
+    <br />
+    <h3>6. Dynamic-Service-Setup</h3>
+    <p>
+      6.1 Create the service "service create dynamic [agent] [name] [version]
+      [keep_online] [max_online] [players_for_autostart] {mib_per_server}"
+    </p>
+    <p>5.2 Start the service "service start [name]"</p>
+    <p>
+      5.3 Start multible servers from a dynamic server "service start [name]
+      {number}"
+    </p>
     <br />
     <br />
     <h2>Private Beta</h2>
@@ -122,6 +131,21 @@
     <p>- Do not use it in any production environment</p>
     <br />
     <br />
+    <h2>Progress</h2>
+    <h3>Commands/Master:</h3>
+    <p>- Stop-Command: finished</p>
+    <p>- Agent-Command: finished</p>
+    <p>- Service-Command: in work</p>
+    <p>- Version-Command: up next</p>
+    <h3>Commands/Agent:</h3>
+    <p>- Connect-Command: in work</p>
+    <p>- Disconnect-Command: in work</p>
+    <h3>Web/Master</h3>
+    <p>- GUI/Webinterface: in work</p>
+    <p>- API: in work</p>
+    <p>- Login: up next</p>
+    <br />
+    <br />
     <h2>Download</h2>
     <br />
     <p>
@@ -129,7 +153,7 @@
       <a href="mailto:mail@therockyt.com">mail@therockyt.com</a>
     </p>
     <p>There is currently no download.</p>
-    <p>ETA: 01. February 2023</p>
+    <p>ETA: 01. March 2023</p>
     <br />
     <br />
     <h2>Do you have any questions?</h2>
