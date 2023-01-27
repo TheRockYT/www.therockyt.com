@@ -42,6 +42,7 @@ const nav = `
           <li><a href="/directbans" id="nav_directbans">DirectBans</a></li>
           <li><a href="/sync" id="nav_sync">Sync</a></li>
           <li><a href="/shutuppc" id="nav_shutuppc">ShutUpPC</a></li>
+          <li><a href="/fspawn" id="nav_fspawn">FSpawn</a></li>
           <li>
             <a href="/link/?to=https://github.com/TheRockYT"
               >GitHub</a
