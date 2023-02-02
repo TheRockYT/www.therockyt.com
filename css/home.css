@@ -38,7 +38,7 @@ body {
   padding: 5vmin;
   position: fixed;
   text-align: center;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 .content * {
