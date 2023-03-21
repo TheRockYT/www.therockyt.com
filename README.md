@@ -1,3 +1,2 @@
 #  TheRockYT's GitHub page
-## BETA
-### Visit https://therockyt.github.io for more info
+### Visit https://www.therockyt.com
