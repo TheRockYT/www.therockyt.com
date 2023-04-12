@@ -98,10 +98,14 @@ function setTitle(title) {
 }
 
 function setNavState(val) {
+  // If the value passed into the function is true
   if (val) {
+    // Add the enabled class to the nav_list element
     nav_list.classList.add("enabled");
   } else {
+    // Otherwise, remove the enabled class from the nav_list element
     nav_list.classList.remove("enabled");
   }
+  // Return the current state of the nav_list element
   return getCurrentNavState();
 }
