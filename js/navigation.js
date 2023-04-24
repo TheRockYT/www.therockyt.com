@@ -50,6 +50,7 @@ const nav = `
             >
           </li>
         </ul>
+        <img src="/img/therockyt.png" alt="" id="nav_logo" onclick="window.location.href = '/'"/>
       </nav>
 `;
 document.getElementById("header").innerHTML = nav;
