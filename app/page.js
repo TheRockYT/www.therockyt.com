@@ -1,5 +1,7 @@
 import "./style/home.css";
 
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <div>
@@ -10,25 +12,27 @@ export default function HomePage() {
         <h1>TheRockYT</h1>
         <h2>Top</h2>
         <h3>
-          <a href="/directbans">DirectBans</a>
+          <Link href="/directbans">DirectBans</Link>
         </h3>
         <h3>
-          <a href="/sync">Sync</a>
+          <Link href="/sync">Sync</Link>
         </h3>
         <h3>
-          <a href="/fspawn">FSpawn</a>
+          <Link href="/fspawn">FSpawn</Link>
         </h3>
         <h3>
-          <a href="/advancedcloud">AdvancedCloud</a>
+          <Link href="/advancedcloud">AdvancedCloud</Link>
         </h3>
         <h3>
-          <a href="/shutuppc">ShutUpPC</a>
+          <Link href="/shutuppc">ShutUpPC</Link>
         </h3>
         <h3>
-          <a href="/link/?to=https://github.com/TheRockYT">GitHub</a>
+          <Link href="/link/?to=https://github.com/TheRockYT">GitHub</Link>
         </h3>
         <h3>
-          <a href="/link/?to=https://hub.docker.com/u/therockyt">Docker Hub</a>
+          <Link href="/link/?to=https://hub.docker.com/u/therockyt">
+            Docker Hub
+          </Link>
         </h3>
       </div>
     </div>

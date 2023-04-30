@@ -1,3 +1,5 @@
-# therockyt.github.io - Migration
+# TheRockYT's GitHub page
 
-This is the migration branch for therockyt.github.io.
+### Visit https://www.therockyt.com
+
+#### Now on Next.js
