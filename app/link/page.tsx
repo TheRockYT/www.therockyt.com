@@ -9,7 +9,7 @@ export default function Page() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  var to;
+  var to = "";
   if (
     searchParams != null &&
     (to = searchParams.get("to")) !== null &&
