@@ -7,7 +7,11 @@ import "./style/general.css";
 import "./style/navigation.css";
 import "./style/site.css";
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -16,12 +20,11 @@ export default function RootLayout({ children }) {
   function toggleMenu() {
     setIsActive(!isActive);
   }
-  function setMenu(acitive) {
-    setIsActive(acitive);
+  function setMenu(active: boolean) {
+    setIsActive(active);
   }
-  async function pushToSite(site) {
+  async function pushToSite(site: string) {
     router.push(site);
-    console.log({ router });
     setMenu(false);
   }
   return (
