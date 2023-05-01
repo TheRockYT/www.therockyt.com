@@ -4,41 +4,68 @@ import "./../style/home.css";
 
 import Link from "next/link";
 
-export default function Page(req, res) {
+export default function Page() {
   return (
     <div>
-      <h1>ShutUpPC</h1>
+      <h1>FSpawn</h1>
       <h3>by TheRockYT</h3>
       <br />
       <br />
-      <h3>
-        You need to have Java 8 or newer installed. Tested Java version:
-        <Link href="/link/?to=https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk">
-          Azul Zulu 8.64.0.19 x86
-        </Link>
-      </h3>
+      <h3>You need to have Java 8 or newer installed.</h3>
       <br />
       <br />
-      <h2>What is ShutUpPC?</h2>
-      <p>ShutUpPC is a tool to start computer remotely using Wake-on-LAN.</p>
-      <br />
-      <br />
-      <h2>How to install ShutUpPC</h2>
-      <p>1. Install Java</p>
-      <p>2. Download the latest version</p>
-      <p>3. Place it into an empty directory</p>
-      <p>4. Run the program</p>
-      <br />
-      <br />
-      <h2>How to use ShutUpPC</h2>
-      <p>1. Make sure Wake-on-LAN is enabled on your target machine.</p>
+      <h2>What is FSpawn?</h2>
       <p>
-        2. Add a new computer by clicking <code>PC</code> - <code>Add</code> in
-        the top left corner on the screen.
+        FSpawn is a simple system for spigot servers to set spawns and warps.
       </p>
-      <p>3. Enter the IP address and the MAC address of your target machine.</p>
+      <br />
+      <br />
+      <h2>Features</h2>
+      <p>- First-Join-Teleport</p>
+      <p>- Multible spawns</p>
+      <p>- Warps</p>
+      <br />
+      <br />
+      <h2>TeleportMode</h2>
+      <p>- 0: FirstJoin</p>
+      <p>- 1: Always</p>
+      <p>- 2: Never</p>
+      <br />
+      <br />
+      <h2>Installation</h2>
+      <p>- Download the latest version</p>
+      <p>- Move the file into the plugins folder of the spigot server</p>
+      <p>- Restart the server</p>
+      <br />
+      <br />
+      <h2>Commands</h2>
+      <h3>Teleport you to a spawn</h3>
       <p>
-        4. Start your pc using <code>PC</code> - <code>Start</code>
+        Command: <code>spawn (name)</code>
+      </p>
+      <p>
+        Permission: <code>-</code>
+      </p>
+      <h3>Set a spawn</h3>
+      <p>
+        Command: <code>setspawn [name/"default"] (permission)</code>
+      </p>
+      <p>
+        Permission: <code>FSpawn.SET</code>
+      </p>
+      <h3>Delete a spawn</h3>
+      <p>
+        Command: <code>deletespawn [name/"default"]</code>
+      </p>
+      <p>
+        Permission: <code>FSpawn.DELETE</code>
+      </p>
+      <h3>Reload the plugin</h3>
+      <p>
+        Command: <code>fspawn reload</code>
+      </p>
+      <p>
+        Permission: <code>FSpawn.RELOAD</code>
       </p>
       <br />
       <br />
@@ -79,39 +106,61 @@ export default function Page(req, res) {
       </p>
       <br />
       <p>
-        <Link href="/link/?to=https://github.com/TheRockYT/ShutUpPC">
-          GitHub Project/Repository (TheRockYT/ShutUpPC)
+        <Link href="/link/?to=https://github.com/TheRockYT/FSpawn">
+          GitHub Project/Repository (TheRockYT/FSpawn)
         </Link>
       </p>
       <br />
       <p>
-        <Link href="/link/?to=https://github.com/TheRockYT/ShutUpPC/issues">
-          GitHub Issues (TheRockYT/ShutUpPC/Issues)
+        <Link href="/link/?to=https://github.com/TheRockYT/FSpawn/issues">
+          GitHub Issues (TheRockYT/FSpawn/Issues)
         </Link>
       </p>
       <br />
       <p>
-        <Link href="/link/?to=https://github.com/TheRockYT/ShutUpPC/pulls">
-          GitHub Pull requests (TheRockYT/ShutUpPC/Pull requests)
+        <Link href="/link/?to=https://github.com/TheRockYT/FSpawn/pulls">
+          GitHub Pull requests (TheRockYT/FSpawn/Pull requests)
         </Link>
       </p>
       <br />
       <br />
       <h2>Download</h2>
       <br />
+      <h2>Releases</h2>
+      <br />
       <p>
-        ShutUpPC v1.0.2:{" "}
+        FSpawn v2.2-spigot:{" "}
         <a
-          href="https://api.therockyt.com/shutuppc/download/ShutUpPC-v1.0.2.jar"
+          href="https://api.therockyt.com/pl/fspawn/download/FSpawn-v2.2-spigot.jar"
+          download
+        >
+          Download
+        </a>
+      </p>
+      <br />
+      <p>
+        FSpawn v2.1-spigot:{" "}
+        <a
+          href="https://api.therockyt.com/pl/fspawn/download/FSpawn-v2.1-spigot.jar"
+          download
+        >
+          Download
+        </a>
+      </p>
+      <br />
+      <p>
+        FSpawn v2.0-spigot:{" "}
+        <a
+          href="https://api.therockyt.com/pl/fspawn/download/FSpawn-v2.0-spigot.jar"
           download
         >
           Download
         </a>
       </p>
       <p>
-        ShutUpPC v1.0.1:{" "}
+        FSpawn v1.0-spigot:{" "}
         <a
-          href="https://api.therockyt.com/shutuppc/download/ShutUpPC-v1.0.1.jar"
+          href="https://api.therockyt.com/pl/fspawn/download/FSpawn-v1.0-spigot.jar"
           download
         >
           Download

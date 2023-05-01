@@ -4,7 +4,7 @@ import "./../style/home.css";
 
 import Link from "next/link";
 
-export default function Page(req, res) {
+export default function Page() {
   return (
     <div>
       <h1>Website Terms and Conditions of Use</h1>
