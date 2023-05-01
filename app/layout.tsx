@@ -7,7 +7,7 @@ import "./style/general.css";
 import "./style/navigation.css";
 import "./style/site.css";
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: AppProps) {
   const router = useRouter();
   const pathname = usePathname();
 
