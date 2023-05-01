@@ -72,6 +72,10 @@ footer ul li {
     height: 100%;
     text-align: center;
   }
+  nav.enabled {
+    height: 100%;
+    text-align: center;
+  }
   nav img.enabled {
     margin: 20px;
     display: block;

@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <title>TheRockYT</title>
       </head>
       <body>
-        <nav>
+        <nav className={isActive ? "enabled" : ""}>
           <img
             src="/img/icons/menu_open.png"
             alt="X"
