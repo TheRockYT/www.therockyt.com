@@ -9,9 +9,9 @@ export default function Page() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  if (searchParams != null && searchParams.get("to") !== null) {
+  if (searchParams != null) {
     var to = searchParams.get("to");
-    if (to.startsWith("https://")) {
+    if (to != null && to.startsWith("https://")) {
       return (
         <div>
           <h1>External Link</h1>
