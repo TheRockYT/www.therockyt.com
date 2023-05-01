@@ -10,8 +10,10 @@ export default function Page() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   if (searchParams != null) {
-    var to = searchParams.get("to");
-    if (to != null && to.startsWith("https://")) {
+    var to_ = searchParams.get("to");
+    if (to_ != null && to_.startsWith("https://")) {
+      const to = to_;
+
       return (
         <div>
           <h1>External Link</h1>
