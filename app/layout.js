@@ -16,7 +16,14 @@ export default function RootLayout({ children }) {
   function toggleMenu() {
     setIsActive(!isActive);
   }
-
+  function setMenu(acitive) {
+    setIsActive(acitive);
+  }
+  async function pushToSite(site) {
+    router.push(site);
+    console.log({ router });
+    setMenu(false);
+  }
   return (
     <html>
       <head>
@@ -50,8 +57,7 @@ export default function RootLayout({ children }) {
             <li>
               <p
                 onClick={() => {
-                  router.push("/");
-                  toggleMenu();
+                  pushToSite("/");
                 }}
                 className={pathname === "/" ? "active" : ""}
               >
@@ -61,8 +67,7 @@ export default function RootLayout({ children }) {
             <li>
               <p
                 onClick={() => {
-                  router.push("/directbans");
-                  toggleMenu();
+                  pushToSite("/directbans");
                 }}
                 className={pathname === "/directbans" ? "active" : ""}
               >
@@ -72,8 +77,7 @@ export default function RootLayout({ children }) {
             <li>
               <p
                 onClick={() => {
-                  router.push("/sync");
-                  toggleMenu();
+                  pushToSite("/sync");
                 }}
                 className={pathname === "/sync" ? "active" : ""}
               >
@@ -83,8 +87,7 @@ export default function RootLayout({ children }) {
             <li>
               <p
                 onClick={() => {
-                  router.push("/fspawn");
-                  toggleMenu();
+                  pushToSite("/fspawn");
                 }}
                 className={pathname === "/fspawn" ? "active" : ""}
               >
@@ -94,8 +97,7 @@ export default function RootLayout({ children }) {
             <li>
               <p
                 onClick={() => {
-                  router.push("/advancedcloud");
-                  toggleMenu();
+                  pushToSite("/advancedcloud");
                 }}
                 className={pathname === "/advancedcloud" ? "active" : ""}
               >
@@ -105,8 +107,7 @@ export default function RootLayout({ children }) {
             <li>
               <p
                 onClick={() => {
-                  router.push("/shutuppc");
-                  toggleMenu();
+                  pushToSite("/shutuppc");
                 }}
                 className={pathname === "/shutuppc" ? "active" : ""}
               >
@@ -116,8 +117,7 @@ export default function RootLayout({ children }) {
             <li>
               <p
                 onClick={() => {
-                  router.push("/link?to=https://github.com/TheRockYT");
-                  toggleMenu();
+                  pushToSite("/link?to=https://github.com/TheRockYT");
                 }}
               >
                 GitHub
