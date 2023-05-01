@@ -20,7 +20,7 @@ export default function RootLayout({
   function toggleMenu() {
     setIsActive(!isActive);
   }
-  function setMenu(active) {
+  function setMenu(active: boolean) {
     setIsActive(active);
   }
   async function pushToSite(site) {
