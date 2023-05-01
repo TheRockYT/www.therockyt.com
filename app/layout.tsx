@@ -16,8 +16,8 @@ export default function RootLayout({ children }) {
   function toggleMenu() {
     setIsActive(!isActive);
   }
-  function setMenu(acitive) {
-    setIsActive(acitive);
+  function setMenu(active) {
+    setIsActive(active);
   }
   async function pushToSite(site) {
     router.push(site);
