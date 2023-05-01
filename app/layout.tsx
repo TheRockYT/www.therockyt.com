@@ -7,7 +7,11 @@ import "./style/general.css";
 import "./style/navigation.css";
 import "./style/site.css";
 
-export default function RootLayout({ children }: AppProps) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const router = useRouter();
   const pathname = usePathname();
 
