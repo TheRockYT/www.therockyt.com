@@ -9,74 +9,72 @@ export default function Page() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  var to = "";
-  if (
-    searchParams != null &&
-    (to = searchParams.get("to")) !== null &&
-    (to.startsWith("https://") || to.startsWith("http://"))
-  ) {
-    return (
-      <div>
-        <h1>External Link</h1>
-        <br />
-        <br />
-        <br />
-        <h2>Do you want to leave www.therockyt.com?</h2>
-        <br />
-        <br />
-        <br />
-        <br />
-        <p>
-          <Link
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              router.push(to);
-            }}
-          >
-            Click here to redirect.
-          </Link>
-        </p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <p>
-          <Link
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              router.back();
-            }}
-          >
-            Click here to go back to the last site.
-          </Link>
-        </p>
-        <br />
-        <p>
-          <Link href="/">Click here to go home.</Link>
-        </p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <h3>Link:</h3>
-        <p>{to}</p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <p>
-          TheRockYT has not reviewed all of the sites linked to its Website and
-          is not responsible for the contents of any such linked site. The
-          presence of any link does not imply endorsement by TheRockYT of the
-          site. The use of any linked website is at the user’s own risk.
-        </p>
-        <br />
-        <br />
-        <p>Please read our Privacy Policy for more information.</p>
-      </div>
-    );
+  if (searchParams != null && searchParams.get("to") !== null) {
+    var to = searchParams.get("to");
+    if (to.startsWith("https://")) {
+      return (
+        <div>
+          <h1>External Link</h1>
+          <br />
+          <br />
+          <br />
+          <h2>Do you want to leave www.therockyt.com?</h2>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push(to);
+              }}
+            >
+              Click here to redirect.
+            </Link>
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                router.back();
+              }}
+            >
+              Click here to go back to the last site.
+            </Link>
+          </p>
+          <br />
+          <p>
+            <Link href="/">Click here to go home.</Link>
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3>Link:</h3>
+          <p>{to}</p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            TheRockYT has not reviewed all of the sites linked to its Website
+            and is not responsible for the contents of any such linked site. The
+            presence of any link does not imply endorsement by TheRockYT of the
+            site. The use of any linked website is at the user’s own risk.
+          </p>
+          <br />
+          <br />
+          <p>Please read our Privacy Policy for more information.</p>
+        </div>
+      );
+    }
   }
   return (
     <div>
