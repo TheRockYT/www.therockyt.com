@@ -87,12 +87,16 @@ export default function Page() {
       <h2>Waiting...</h2>
       <br />
       <br />
-      <Link href="#" onClick={() => router.back()}>
-        Click here to go back to the last site.
-      </Link>
+      <p>
+        <Link href="#" onClick={() => router.back()}>
+          Click here to go back to the last site.
+        </Link>
+      </p>
       <br />
       <br />
-      <Link href="/">Click here to go home.</Link>
+      <p>
+        <Link href="/">Click here to go home.</Link>
+      </p>
     </div>
   );
 }
