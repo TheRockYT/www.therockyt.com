@@ -23,9 +23,8 @@ export default function RootLayout({
   function setMenu(active: boolean) {
     setIsActive(active);
   }
-  async function pushToSite(site) {
+  async function pushToSite(site: string) {
     router.push(site);
-    console.log({ router });
     setMenu(false);
   }
   return (
