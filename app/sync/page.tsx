@@ -15,7 +15,7 @@ export default function Page() {
       <br />
       <br />
       <h2>What is Sync?</h2>
-      <p>Sync is a sycronisation system for Spigot-Servers.</p>
+      <p>Sync is a synchronization system for Spigot-Servers.</p>
       <br />
       <br />
       <h2>Features</h2>
@@ -36,8 +36,8 @@ export default function Page() {
       <p>- - VaultEconomy</p>
       <p>- - EssentialsEconomy</p>
       <p>- Inventory migration</p>
-      <p>- - Migrate inventorys to newer version by just joining them.</p>
-      <p>- - Note: Migrated data can not be downgrated again.</p>
+      <p>- - Migrate inventories to newer version by just joining them.</p>
+      <p>- - Note: Migrated data can not be downgraded again.</p>
       <p>- Webview (planned)</p>
       <br />
       <br />
