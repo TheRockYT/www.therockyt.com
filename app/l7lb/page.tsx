@@ -20,7 +20,7 @@ export default function Page() {
       <br />
       <br />
       <h2>
-        This tool is currently not in development and might be achived in the
+        This tool is currently not in development and might be achieved in the
         future.
       </h2>
       <br />
@@ -34,7 +34,7 @@ export default function Page() {
       <p>2. Download the latest version</p>
       <p>3. Place it into an empty directory</p>
       <p>4. Run the program</p>
-      <p>5. Startup a Webbrower and go to ServerIp:8080 (default)</p>
+      <p>5. Startup a Webbrowser and go to ServerIp:8080 (default)</p>
       <p>6. Follow steps displayed on the page</p>
       <br />
       <br />

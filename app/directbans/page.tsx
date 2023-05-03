@@ -29,7 +29,7 @@ export default function Page() {
       <p>- UUID-Bans</p>
       <p>- SQL-Support</p>
       <p> - Supports MySQL & SQLite</p>
-      <p>- IP-Bans (comming soon)</p>
+      <p>- IP-Bans (coming soon)</p>
       <br />
       <br />
       <h2>How to install on Spigot/Bungeecord</h2>
@@ -53,7 +53,7 @@ export default function Page() {
       <p>3. Restart the server</p>
       <p>4. Open a browser and go to http://serverIp:port/web</p>
       <p>
-        5. If the Webinterface is'nt setup, the setup assistent will be visible.
+        5. If the Webinterface isn't setup, the setup Assistent will be visible.
       </p>
       <br />
       <br />
@@ -61,12 +61,12 @@ export default function Page() {
       <p>1. Download the standalone Webinterface ("DirectBan-Web.jar")</p>
       <p>2. Start the application using "java -jar DirectBan-Web.jar"</p>
       <p>3. Stop the application using "stop"</p>
-      <p>4. Open the new generatd config and insert SQL-Information</p>
+      <p>4. Open the new generated config and insert SQL-Information</p>
       <p>5. Customize port in the config</p>
       <p>6. Start the application using "java -jar DirectBan-Web.jar"</p>
       <p>7. Open a browser and go to http://serverIp:port/web</p>
       <p>
-        8. If the Webinterface is'nt setup, the setup assistent will be visible.
+        8. If the Webinterface isn't setup, the setup Assistent will be visible.
       </p>
       <br />
       <br />
@@ -89,12 +89,12 @@ export default function Page() {
       <h3>
         This project is currently in public beta. What do you need to now:
       </h3>
-      <p>- You dont get any support</p>
+      <p>- You don't get any support</p>
       <p>
         - Please report issues to
         <a href="mailto:mail@therockyt.com">mail@therockyt.com</a>
       </p>
-      <p>- Update regulary to the latest beta version</p>
+      <p>- Update regularly to the latest beta version</p>
       <p>- Do not use it in any production environment</p>
       <br />
       <br />
