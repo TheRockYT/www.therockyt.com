@@ -22,11 +22,11 @@ export default function Page() {
       <p>- Run servers in Docker-Containers</p>
       <p>- Multi-Templates</p>
       <p>
-        - - Install deufault plugins on all servers (Anti-Cheat, Permissions,
+        - - Install default plugins on all servers (Anti-Cheat, Permissions,
         Sync, ...)
       </p>
       <p>
-        - - Use multible chained templates: (general - bedwars - bedwars solo -
+        - - Use multiple chained templates: (general - bedwars - bedwars solo -
         bedwars map)
       </p>
       <p>- Webinterface</p>
@@ -58,7 +58,7 @@ export default function Page() {
       <br />
       <h3>2. Agent</h3>
       <p>2.1 Download the latest version of the agent</p>
-      <p>2.2 Create empty directorys on every server the agent should run</p>
+      <p>2.2 Create empty directories on every server, the agent should run</p>
       <p>2.3 Place the Jar-File inside the folder</p>
       <p>2.4 Run the Jar-File</p>
       <p>2.5 Set the port: "agent service port [port]"</p>
@@ -112,7 +112,7 @@ export default function Page() {
       </p>
       <p>5.2 Start the service "service start [name]"</p>
       <p>
-        5.3 Start multible servers from a dynamic server "service start [name]
+        5.3 Start multiple servers from a dynamic server "service start [name]
         (number)"
       </p>
       <br />
@@ -126,7 +126,7 @@ export default function Page() {
         - Please report issues to{" "}
         <Link href="mailto:mail@therockyt.com">mail@therockyt.com</Link>
       </p>
-      <p>- Update regulary to the latest beta version</p>
+      <p>- Update regularly to the latest beta version</p>
       <p>- Do not use it in any production environment</p>
       <br />
       <br />
