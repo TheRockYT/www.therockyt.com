@@ -21,7 +21,7 @@ export default function Page() {
       <h2>Features</h2>
       <p>- Install Plugins directly to a Spigot/Bungee Server.</p>
       <p>- Automatically update Plugins.</p>
-      <p>- Disabe/Enable Plugins</p>
+      <p>- Disable/Enable Plugins</p>
       <br />
       <br />
       <h2>How to install on Spigot/Bungeecord</h2>
@@ -45,12 +45,12 @@ export default function Page() {
       <br />
       <h2>Public Beta</h2>
       <h3>This project is currently in beta. What do you need to now:</h3>
-      <p>- You dont get any support</p>
+      <p>- You don't get any support</p>
       <p>
         - Please report issues to{" "}
         <Link href="mailto:mail@therockyt.com">mail@therockyt.com</Link>
       </p>
-      <p>- Update regulary to the latest beta version</p>
+      <p>- Update regularly to the latest beta version</p>
       <p>- Do not use it in any production environment</p>
       <br />
       <br />

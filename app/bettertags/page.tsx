@@ -15,7 +15,9 @@ export default function Page() {
       <br />
       <br />
       <h2>What is BetterTags?</h2>
-      <p>BetterTags can chage the Nametags of players on your spigot server.</p>
+      <p>
+        BetterTags can change the Nametags of players on your spigot server.
+      </p>
       <br />
       <br />
       <h2>Features</h2>

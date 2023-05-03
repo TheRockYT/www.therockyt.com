@@ -22,7 +22,7 @@ export default function Page() {
       <br />
       <h2>Features</h2>
       <p>- First-Join-Teleport</p>
-      <p>- Multible spawns</p>
+      <p>- Multiple spawns</p>
       <p>- Warps</p>
       <br />
       <br />
