@@ -3,9 +3,9 @@
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 
-import "./style/general.css";
-import "./style/navigation.css";
-import "./style/site.css";
+import "@/style/general.css";
+import "@/style/navigation.css";
+import "@/style/site.css";
 
 export default function RootLayout({
   children,

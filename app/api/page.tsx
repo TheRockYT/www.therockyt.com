@@ -1,7 +1,5 @@
 "use client";
 
-import "./../style/home.css";
-
 import Link from "next/link";
 
 export default function Page() {
