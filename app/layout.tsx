@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -27,6 +29,23 @@ export default function RootLayout({
     router.push(site);
     setMenu(false);
   }
+  const navigation = [
+    ["Home", "/"],
+    ["DirectBans", "/directbans"],
+    ["Sync", "/sync"],
+    ["FSpawn", "/fspawn"],
+    ["Cloud", "/advancedcloud"],
+    ["ShutUpPC", "/shutuppc"],
+    ["GitHub", "/link?to=https://github.com/TheRockYT"],
+  ];
+  const footer = [
+    ["Home", "/"],
+    ["API", "/api"],
+    ["Terms and Conditions", "/terms"],
+    ["Privacy Policy", "/privacypolicy"],
+    ["Contact", "contact"],
+    ["GitHub", "/link?to=https://github.com/TheRockYT"],
+  ];
   return (
     <html>
       <head>
@@ -57,75 +76,20 @@ export default function RootLayout({
             onClick={toggleMenu}
           />
           <ul id="nav_list" className={isActive ? "enabled" : ""}>
-            <li>
-              <p
-                onClick={() => {
-                  pushToSite("/");
-                }}
-                className={pathname === "/" ? "active" : ""}
-              >
-                Home
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  pushToSite("/directbans");
-                }}
-                className={pathname === "/directbans" ? "active" : ""}
-              >
-                DirectBans
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  pushToSite("/sync");
-                }}
-                className={pathname === "/sync" ? "active" : ""}
-              >
-                Sync
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  pushToSite("/fspawn");
-                }}
-                className={pathname === "/fspawn" ? "active" : ""}
-              >
-                FSpawn
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  pushToSite("/advancedcloud");
-                }}
-                className={pathname === "/advancedcloud" ? "active" : ""}
-              >
-                Cloud
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  pushToSite("/shutuppc");
-                }}
-                className={pathname === "/shutuppc" ? "active" : ""}
-              >
-                ShutUpPC
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  pushToSite("/link?to=https://github.com/TheRockYT");
-                }}
-              >
-                GitHub
-              </p>
-            </li>
+            {navigation.map((item) => (
+              <li key={item[0]}>
+                <Link
+                  href={item[1]}
+                  passHref
+                  onClick={() => {
+                    setMenu(false);
+                  }}
+                  className={pathname === item[1] ? "active" : ""}
+                >
+                  {item[0]}
+                </Link>
+              </li>
+            ))}
           </ul>
           <img
             src="/img/therockyt.png"
@@ -137,58 +101,20 @@ export default function RootLayout({
         <main>{children}</main>
         <footer>
           <ul>
-            <li>
-              <p
-                onClick={() => {
-                  router.push("/");
-                }}
-                className={pathname === "/" ? "active" : ""}
-              >
-                Home
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  router.push("/api");
-                }}
-                className={pathname === "/api" ? "active" : ""}
-              >
-                API
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  router.push("/terms");
-                }}
-                className={pathname === "/terms" ? "active" : ""}
-              >
-                Terms and Conditions
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  router.push("/privacypolicy");
-                }}
-                className={pathname === "/privacypolicy" ? "active" : ""}
-              >
-                Privacy Policy
-              </p>
-            </li>
-            <li>
-              <p
-                onClick={() => {
-                  router.push("https://github.com/TheRockYT");
-                }}
-                className={
-                  pathname === "https://github.com/TheRockYT" ? "active" : ""
-                }
-              >
-                Contact
-              </p>
-            </li>
+            {footer.map((item) => (
+              <li key={item[0]}>
+                <Link
+                  href={item[1]}
+                  passHref
+                  onClick={() => {
+                    setMenu(false);
+                  }}
+                  className={pathname === item[1] ? "active" : ""}
+                >
+                  {item[0]}
+                </Link>
+              </li>
+            ))}
           </ul>
         </footer>
       </body>
