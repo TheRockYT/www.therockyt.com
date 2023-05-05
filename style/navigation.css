@@ -20,7 +20,7 @@ nav ul li {
   margin: 0;
 }
 
-nav ul li p,
+nav ul li a,
 nav img {
   color: black;
   text-decoration: none;
@@ -29,6 +29,7 @@ nav img {
   margin: 20px;
   padding: 0;
   font-size: 30px;
+  cursor: pointer;
 }
 
 nav img {
@@ -37,9 +38,6 @@ nav img {
   position: fixed;
   margin: 0;
   padding: 0;
-}
-footer ul li p {
-  cursor: pointer;
 }
 footer ul li {
   list-style-type: none;
@@ -64,7 +62,7 @@ footer ul li {
     text-align: center;
     margin-top: 20px;
   }
-  nav ul li p {
+  nav ul li a {
     float: none;
     margin: 0;
   }
@@ -81,8 +79,8 @@ footer ul li {
     display: block;
   }
 }
-footer ul li p.active,
-nav ul li p.active {
+footer ul li a.active,
+nav ul li a.active {
   transition: color 0.5s;
   color: turquoise;
 }
