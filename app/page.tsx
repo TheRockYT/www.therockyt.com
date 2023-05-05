@@ -1,4 +1,4 @@
-import "./style/home.css";
+import "@/style/home.css";
 
 import Link from "next/link";
 
