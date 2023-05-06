@@ -3,12 +3,15 @@ import Link from "next/link";
 
 export default function Error({ statusCode }: any) {
   return (
-    <p>
-      {statusCode
-        ? `An error ${statusCode} occurred on server`
-        : "An error occurred on client"}
-      <Link href="/">Go back home</Link>
-    </p>
+    <div>
+      <h1>Sorry</h1>
+      <h2>
+        {statusCode
+          ? `An error ${statusCode} occurred on server`
+          : "An error occurred on client"}
+        <Link href="/">Go back home</Link>
+      </h2>
+    </div>
   );
 }
 
