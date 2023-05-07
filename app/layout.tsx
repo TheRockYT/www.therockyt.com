@@ -19,6 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
+        <link rel="apple-touch-icon" href="/img/therockyt.png" />
+        <meta name="application-name" content="TheRockYT" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
@@ -27,7 +29,6 @@ export default function RootLayout({
           type="image/x-icon"
         />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/img/therockyt.png" />
         <meta name="theme-color" content="#fff" />
       </head>
       <body>
