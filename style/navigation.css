@@ -84,7 +84,10 @@ nav ul li a.active {
   transition: color 0.5s;
   color: turquoise;
 }
-
+footer ul li a {
+  font-size: 1.2em;
+  line-height: 40px;
+}
 #nav_logo {
   display: block;
   top: 5px;
