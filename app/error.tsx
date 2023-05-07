@@ -1,6 +1,10 @@
 "use client";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Error - TheRockYT",
+};
+
 export default function Error({ statusCode }: any) {
   return (
     <div>

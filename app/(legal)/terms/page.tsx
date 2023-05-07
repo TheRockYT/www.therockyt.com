@@ -2,6 +2,10 @@ import "@/style/home.css";
 
 import Link from "next/link";
 
+export const metadata = {
+  title: "Terms and Conditions - TheRockYT",
+};
+
 export default function Page() {
   return (
     <div>

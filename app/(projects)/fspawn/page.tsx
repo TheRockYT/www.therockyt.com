@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "FSpawn - TheRockYT",
+};
+
 export default function Page() {
   return (
     <div>

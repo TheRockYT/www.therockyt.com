@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Home - TheRockYT",
+  description: "TheRockYT's Website",
+};
 import "@/style/home.css";
 
 import Link from "next/link";

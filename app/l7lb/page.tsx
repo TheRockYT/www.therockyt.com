@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "L7LB - TheRockYT",
+};
+
 export default function Page() {
   return (
     <div>
