@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function NavComponent() {
   const router = useRouter();
@@ -30,19 +31,23 @@ export default function NavComponent() {
   ];
   return (
     <nav className={isActive ? "enabled" : ""}>
-      <img
+      <Image
         src="/img/icons/menu_open.png"
         alt="X"
         id="nav_open"
         className={isActive ? "" : "enabled"}
         onClick={toggleMenu}
+        height="40"
+        width="40"
       />
-      <img
+      <Image
         src="/img/icons/menu_close.png"
         alt="X"
         id="nav_close"
         className={isActive ? "enabled" : ""}
         onClick={toggleMenu}
+        height="40"
+        width="40"
       />
       <ul id="nav_list" className={isActive ? "enabled" : ""}>
         {navigation.map((item) => (
@@ -60,11 +65,14 @@ export default function NavComponent() {
           </li>
         ))}
       </ul>
-      <img
+      <Image
         src="/img/therockyt.png"
         onClick={() => {
           router.push("/");
         }}
+        height="40"
+        width="40"
+        alt={""}
       />
     </nav>
   );

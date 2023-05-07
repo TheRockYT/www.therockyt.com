@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "TheRockYT",
+  description: "TheRockYT's Website",
+};
+
 import "@/style/general.css";
 import "@/style/navigation.css";
 import "@/style/site.css";
@@ -11,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -21,7 +26,6 @@ export default function RootLayout({
           href="/img/therockyt.png"
           type="image/x-icon"
         />
-        <title>TheRockYT</title>
       </head>
       <body>
         <NavComponent />
