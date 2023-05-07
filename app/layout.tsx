@@ -1,14 +1,14 @@
-export const metadata = {
-  title: "TheRockYT",
-  description: "TheRockYT's Website",
-};
-
 import "@/style/general.css";
 import "@/style/navigation.css";
 import "@/style/site.css";
 
 import NavComponent from "@/components/NavComponent";
 import FooterComponent from "@/components/FooterComponent";
+
+export const metadata = {
+  title: "TheRockYT",
+  description: "TheRockYT's Website",
+};
 
 export default function RootLayout({
   children,
@@ -26,6 +26,9 @@ export default function RootLayout({
           href="/img/therockyt.png"
           type="image/x-icon"
         />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/img/therockyt.png" />
+        <meta name="theme-color" content="#fff" />
       </head>
       <body>
         <NavComponent />
