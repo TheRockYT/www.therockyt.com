@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "404 - TheRockYT",
+};
+
 export default function NotFoundCatchAll() {
   return (
     <div>
