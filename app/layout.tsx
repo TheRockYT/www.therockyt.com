@@ -4,6 +4,7 @@ import "@/style/site.css";
 
 import NavComponent from "@/components/NavComponent";
 import FooterComponent from "@/components/FooterComponent";
+import Script from "next/script";
 
 export const metadata = {
   title: "TheRockYT",
@@ -36,6 +37,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#fff" />
+        <Script src="/app.js"></Script>
       </head>
       <body>
         <NavComponent />
