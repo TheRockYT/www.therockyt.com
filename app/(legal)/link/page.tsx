@@ -23,15 +23,14 @@ export default function Page() {
           <br />
           <br />
           <p>
-            <Link
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                router.push(to);
-              }}
+            <a
+              target="_blank"
+              href={to}
+              rel="noopener noreferrer"
+              onClick={() => router.back()}
             >
               Click here to redirect.
-            </Link>
+            </a>
           </p>
           <br />
           <br />
