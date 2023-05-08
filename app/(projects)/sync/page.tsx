@@ -132,8 +132,19 @@ export default function Page() {
         - Please report issues to{" "}
         <Link href="mailto:mail@therockyt.com">mail@therockyt.com</Link>
       </p>
-      <p>- Update regulary to the latest beta version</p>
+      <p>- Update regularly to the latest beta version</p>
       <p>- Do not use it in any production environment</p>
+      <br />
+      <br />
+      <h2>Sync v0.9 Beta (EA)</h2>
+      <p>Sync v0.9 Beta has following new features:</p>
+      <p>- ScyllaDB/Cassandra Support</p>
+      <p>- MongoDB Support</p>
+      <p>- Async Synchronisation</p>
+      <br />
+      <p>
+        Learn More: <Link href="/early-access">Early Access</Link>
+      </p>
       <br />
       <br />
       <h2>Download</h2>
