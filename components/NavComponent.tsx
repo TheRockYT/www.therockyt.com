@@ -22,11 +22,8 @@ export default function NavComponent() {
   }
   const navigation = [
     ["Home", "/"],
-    ["DirectBans", "/directbans"],
-    ["Sync", "/sync"],
-    ["FSpawn", "/fspawn"],
-    ["Cloud", "/advancedcloud"],
-    ["ShutUpPC", "/shutuppc"],
+    ["Projects", "/projects"],
+    ["Early Access", "/early-access"],
     ["GitHub", "/link?to=https://github.com/TheRockYT"],
   ];
   return (
