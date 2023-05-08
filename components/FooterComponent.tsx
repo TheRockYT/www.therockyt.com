@@ -7,10 +7,12 @@ export default function NavComponent() {
 
   const footer = [
     ["Home", "/"],
+    ["Portal", "/portal"],
+    ["Early Access", "/early-access"],
     ["API", "/api"],
     ["Terms and Conditions", "/terms"],
     ["Privacy Policy", "/privacypolicy"],
-    ["Contact", "contact"],
+    ["Contact", "/contact"],
     ["GitHub", "/link?to=https://github.com/TheRockYT"],
   ];
   return (
