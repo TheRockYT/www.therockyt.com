@@ -16,10 +16,6 @@ export default function NavComponent() {
   function setMenu(active: boolean) {
     setIsActive(active);
   }
-  async function pushToSite(site: string) {
-    router.push(site);
-    setMenu(false);
-  }
   const navigation = [
     ["Home", "/"],
     ["Projects", "/projects"],
