@@ -16,17 +16,10 @@ export default function NavComponent() {
   function setMenu(active: boolean) {
     setIsActive(active);
   }
-  async function pushToSite(site: string) {
-    router.push(site);
-    setMenu(false);
-  }
   const navigation = [
     ["Home", "/"],
-    ["DirectBans", "/directbans"],
-    ["Sync", "/sync"],
-    ["FSpawn", "/fspawn"],
-    ["Cloud", "/advancedcloud"],
-    ["ShutUpPC", "/shutuppc"],
+    ["Projects", "/projects"],
+    ["Early Access", "/early-access"],
     ["GitHub", "/link?to=https://github.com/TheRockYT"],
   ];
   return (

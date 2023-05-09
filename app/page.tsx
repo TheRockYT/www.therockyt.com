@@ -14,21 +14,16 @@ export default function HomePage() {
       <div className="bg bg3"></div>
       <div className="content">
         <h1>TheRockYT</h1>
-        <h2>Top</h2>
+        <br />
+        <h2>Quick-Navigation</h2>
         <h3>
-          <Link href="/directbans">DirectBans</Link>
+          <Link href="/portal">Portal</Link>
         </h3>
         <h3>
-          <Link href="/sync">Sync</Link>
+          <Link href="/projects">Projects</Link>
         </h3>
         <h3>
-          <Link href="/fspawn">FSpawn</Link>
-        </h3>
-        <h3>
-          <Link href="/advancedcloud">AdvancedCloud</Link>
-        </h3>
-        <h3>
-          <Link href="/shutuppc">ShutUpPC</Link>
+          <Link href="/early-access">Early Access</Link>
         </h3>
         <h3>
           <Link href="/link/?to=https://github.com/TheRockYT">GitHub</Link>
