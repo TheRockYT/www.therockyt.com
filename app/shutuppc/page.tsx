@@ -100,6 +100,16 @@ export default function Page() {
       <h2>Download</h2>
       <br />
       <p>
+        ShutUpPC v1.0.3:{" "}
+        <a
+          href="https://api.therockyt.com/shutuppc/download/ShutUpPC-v1.0.3.jar"
+          download
+        >
+          Download
+        </a>
+      </p>
+      <br />
+      <p>
         ShutUpPC v1.0.2:{" "}
         <a
           href="https://api.therockyt.com/shutuppc/download/ShutUpPC-v1.0.2.jar"
@@ -108,6 +118,7 @@ export default function Page() {
           Download
         </a>
       </p>
+      <br />
       <p>
         ShutUpPC v1.0.1:{" "}
         <a
