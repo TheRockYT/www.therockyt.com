@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sync - TheRockYT",
+  title: "RockUtils - TheRockYT",
 };
 
 export default function Page() {
