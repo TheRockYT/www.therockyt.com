@@ -23,7 +23,9 @@ export default function HomePage() {
           <Link href="/projects">Projects</Link>
         </h3>
         <h3>
-          <Link href="/early-access">Early Access</Link>
+          <Link href="/link/?to=https://www.spigotmc.org/members/620754/">
+            SpigotMC
+          </Link>
         </h3>
         <h3>
           <Link href="/link/?to=https://github.com/TheRockYT">GitHub</Link>
