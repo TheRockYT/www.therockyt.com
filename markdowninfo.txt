@@ -1,0 +1,9 @@
+// This is for markdown. I might migrate all content in the future.
+
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+export default function Page() {
+  const markdown = "## Hello, **world**!";
+  return <ReactMarkdown plugins={[remarkGfm]}>{markdown}</ReactMarkdown>;
+}
