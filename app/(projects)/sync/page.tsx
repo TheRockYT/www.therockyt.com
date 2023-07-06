@@ -123,19 +123,6 @@ export default function Page() {
       </p>
       <br />
       <br />
-      <h2>Public Beta</h2>
-      <h3>
-        This project is currently in public beta. What do you need to now:
-      </h3>
-      <p>- You don't get any support</p>
-      <p>
-        - Please report issues to{" "}
-        <Link href="mailto:mail@therockyt.com">mail@therockyt.com</Link>
-      </p>
-      <p>- Update regularly to the latest beta version</p>
-      <p>- Do not use it in any production environment</p>
-      <br />
-      <br />
       <h2>Sync v0.9 Beta (EA)</h2>
       <p>Sync v0.9 Beta has following new features:</p>
       <p>- ScyllaDB/Cassandra Support</p>
@@ -149,25 +136,6 @@ export default function Page() {
       <br />
       <h2>Download</h2>
       <p>Release-ETA: 01. Sep. 2023</p>
-      <br />
-      <p>
-        Sync-v0.8.1-spigot:{" "}
-        <a
-          href="https://api.therockyt.com/pl/sync/download/Sync-v0.8.1-spigot.jar"
-          download
-        >
-          Download
-        </a>
-      </p>
-      <p>
-        Sync-v0.8.0-spigot:{" "}
-        <a
-          href="https://api.therockyt.com/pl/sync/download/Sync-v0.8.0-spigot.jar"
-          download
-        >
-          Download
-        </a>
-      </p>
       <br />
       <br />
       <h2>Do you have any questions?</h2>
