@@ -7,6 +7,7 @@ export default function NavComponent() {
 
   const footer = [
     ["Home", "/"],
+    ["Status", "https://status.therockyt.com"],
     ["Portal", "/portal"],
     ["Early Access", "/early-access"],
     ["API", "/api"],
