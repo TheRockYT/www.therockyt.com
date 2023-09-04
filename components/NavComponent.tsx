@@ -19,6 +19,7 @@ export default function NavComponent() {
   const navigation = [
     ["Home", "/"],
     ["Projects", "/projects"],
+    ["Status", "https://status.therockyt.com"],
     ["GitHub", "/link?to=https://github.com/TheRockYT"],
   ];
   return (
