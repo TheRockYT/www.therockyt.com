@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
+import {usePathname, useRouter} from "next/navigation";
+import {useState} from "react";
 import Image from "next/image";
 
 export default function NavComponent() {
@@ -18,6 +18,7 @@ export default function NavComponent() {
   }
   const navigation = [
     ["Home", "/"],
+    ["About", "/about"],
     ["Projects", "/projects"],
     ["Status", "https://status.therockyt.com"],
     ["GitHub", "/link?to=https://github.com/TheRockYT"],
